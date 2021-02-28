@@ -1,0 +1,4 @@
+- debian fresh install
+- install xorg gcc alsa-utils git
+- install dwm
+- install surf

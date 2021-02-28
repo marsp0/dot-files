@@ -1,0 +1,17 @@
+! === xterm ===
+
+*.foreground:  #cbccc6
+*.background:  #1f2430
+*.cursorColor: #ffcc66
+xterm*faceName: Monospace
+xterm*faceSize: 12
+
+
+! === rofi ===
+
+rofi.color-window: #1f2430, #ffcc66
+rofi.color-normal: #1f2430,  #cbccc6,  #1f2430,  #1f2430,  #ffcc66
+rofi.width: 17
+rofi.lines: 5
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
