@@ -1,4 +1,13 @@
 - debian fresh install
-- install xorg gcc alsa-utils git
-- install dwm
-- install surf
+- install xorg gcc alsa-utils git make libc6-dev libx11-dev libxft-dev libxinerama-dev
+- install dwm (git://git.suckless.org/dwm)
+	- cp dot-files/dwm-config.h dwm/config.h
+- install firefox-esr rofi
+
+Nvidia Drivers
+- update /etc/apt/sources.list with "contrib non-free"
+- download nvidia-driver package
+
+
+Removing unused locales
+- ls | grep -v "en" | grep -v "locale.alias" | xargs sudo rm -rf
