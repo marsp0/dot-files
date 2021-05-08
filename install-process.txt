@@ -1,13 +1,18 @@
-- debian fresh install
-- install xorg gcc alsa-utils git make libc6-dev libx11-dev libxft-dev libxinerama-dev
-- install dwm (git://git.suckless.org/dwm)
-	- cp dot-files/dwm-config.h dwm/config.h
-- install firefox-esr rofi
-
-Nvidia Drivers
-- update /etc/apt/sources.list with "contrib non-free"
-- download nvidia-driver package
-
+sudo apt install xorg 
+sudo apt install --no-install-recommends gcc alsa-utils git make libc6-dev libx11-dev libxft-dev libxinerama-dev
+sudo apt install --no-install-recommends firefox-esr rofi
+mkdir Documents
+mkdir Downloads && cd Downloads
+git clone git://suckless.org/dwm
+git clone https://github.com/marsp0/dot-files
+cp ./dot-files/dwm-config.h ./dwm/config.h
+cd dwm
+sudo make clean install
+cd ../
+cp ./dot-files/.Xresources ~/.Xresources
+- in .xinitrc put "xrdb -merge ~/.Xresources &" and "exec dwm"
 
 Removing unused locales
 - ls | grep -v "en" | grep -v "locale.alias" | xargs sudo rm -rf
+Remove doc folder
+- sudo rm -rf ~/usr/share/doc/*
