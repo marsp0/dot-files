@@ -15,4 +15,8 @@ cp ./dot-files/.Xresources ~/.Xresources
 Removing unused locales
 - ls | grep -v "en" | grep -v "locale.alias" | xargs sudo rm -rf
 Remove doc folder
-- sudo rm -rf ~/usr/share/doc/*
+- sudo rm -rf /usr/share/doc/*
+
+
+Check space
+- du -sch * .[!.]* | sort -h
