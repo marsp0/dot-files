@@ -10,7 +10,7 @@ cd dwm
 sudo make clean install
 cd ../
 cp ./dot-files/.Xresources ~/.Xresources
-- in .xinitrc put "xrdb -merge ~/.Xresources &" and "exec dwm"
+cp ./dot-files/.xinitrc ~/.xinitrc
 
 Removing unused locales
 - ls | grep -v "en" | grep -v "locale.alias" | xargs sudo rm -rf
