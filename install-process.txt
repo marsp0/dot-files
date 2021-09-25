@@ -3,7 +3,7 @@ sudo apt install --no-install-recommends gcc alsa-utils git make libc6-dev libx1
 sudo apt install --no-install-recommends firefox-esr rofi
 mkdir Documents
 mkdir Downloads && cd Downloads
-git clone git://suckless.org/dwm
+git clone git://git.suckless.org/dwm
 git clone https://github.com/marsp0/dot-files
 cp ./dot-files/dwm-config.h ./dwm/config.h
 cd dwm
