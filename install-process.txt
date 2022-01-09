@@ -12,6 +12,8 @@ cd ../
 cp ./dot-files/.Xresources ~/.Xresources
 cp ./dot-files/.xinitrc ~/.xinitrc
 
+Disable console printing of kernel messages
+- dmesg -n 1
 Removing unused locales
 - ls | grep -v "en" | grep -v "locale.alias" | xargs sudo rm -rf
 Remove doc folder
