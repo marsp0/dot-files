@@ -16,7 +16,8 @@ Removing unused locales
 - ls | grep -v "en" | grep -v "locale.alias" | xargs sudo rm -rf
 Remove doc folder
 - sudo rm -rf /usr/share/doc/*
-
+Make debian recognise intel graphics
+- update /etc/default/grub default arg line with : i915.force_probe=4c8a -> sudo update-grub
 
 Check space
 - du -sch * .[!.]* | sort -h
