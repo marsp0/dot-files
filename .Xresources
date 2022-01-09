@@ -1,3 +1,7 @@
+! === cursor ===
+Xcursor.theme: DMZ-Black
+Xcursor.size: 16
+
 ! === xterm ===
 
 xterm*foreground:  rgb:cb/cc/c6
