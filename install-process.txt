@@ -1,5 +1,5 @@
 sudo apt install xorg 
-sudo apt install --no-install-recommends gcc alsa-utils git make libc6-dev libx11-dev libxft-dev libxinerama-dev libxi-dev
+sudo apt install --no-install-recommends gcc alsa-utils make gnupg libc6-dev libx11-dev libxft-dev libxinerama-dev libxi-dev
 sudo apt install --no-install-recommends firefox-esr rofi
 mkdir Documents
 mkdir Downloads && cd Downloads
