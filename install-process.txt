@@ -28,3 +28,6 @@ Sublime Package - manual install ayu
 - Download https://github.com/dempfi/ayu/releases/tag/5.0.3
 - tar -xf ARCHIVE_LOCATION
 - place folder as is in ~/.config/sublime-text/Packages
+
+Windows bootable from Linux
+https://github.com/ValdikSS/windows2usb
