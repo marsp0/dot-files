@@ -1,6 +1,6 @@
 sudo apt install --no-install-recommends xserver-xorg-core xserver-xorg-video-intel xserver-xorg-input-libinput x11-xserver-utils x11-xkb-utils x11-utils xinit xterm libglx-mesa0 libxfont2 xfonts-100dpi xfonts-75dpi xfonts-base xfonts-encodings xfonts-scalable xfonts-utils
 sudo apt install --no-install-recommends gcc pulseaudio pavucontrol lm-sensors htop make gnupg libc6-dev libx11-dev libxft-dev libxinerama-dev libxi-dev
-sudo apt install --no-install-recommends firefox-esr rofi
+sudo apt install --no-install-recommends surf dmenu rofi
 mkdir Documents
 mkdir Downloads && cd Downloads
 git clone git://git.suckless.org/dwm
