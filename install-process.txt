@@ -20,6 +20,8 @@ Remove doc folder
 - sudo rm -rf /usr/share/doc/*
 Make debian recognise intel graphics
 - update /etc/default/grub default arg line with : i915.force_probe=4c8a -> sudo update-grub
+Remove Adwaita Icons
+- cd /usr/share/icons/Adwaita && rm -rf ./256x256/* ./48x48/* ./32x32/* ./16x16/* ./24x24/* ./scalable/* ./96x96/* ./64x64/* ./512x512/* ./22x22/*
 
 Check space
 - du -sch * .[!.]* | sort -h
