@@ -8,6 +8,7 @@ xterm*background:  rgb:1f/24/30
 xterm*cursorColor: rgb:ff/cc/66
 xterm*faceName: Monospace
 xterm*faceSize: 12
+xterm*selectToClipboard: true
 
 
 ! === rofi ===
