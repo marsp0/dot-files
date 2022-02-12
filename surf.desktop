@@ -2,4 +2,4 @@
 Type=Application
 Terminal=false
 Name=Surf
-Exec=surf -d google.com
+Exec=surf -d marsp0.github.io
