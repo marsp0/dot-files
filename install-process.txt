@@ -1,5 +1,5 @@
-sudo apt install --no-install-recommends xserver-xorg-core xserver-xorg-video-intel xserver-xorg-input-libinput x11-xserver-utils x11-xkb-utils x11-utils xinit xterm libglx-mesa0 libxfont2 xfonts-100dpi xfonts-75dpi xfonts-base xfonts-encodings xfonts-scalable xfonts-utils
-sudo apt install --no-install-recommends gcc pulseaudio pavucontrol lm-sensors htop make gnupg libc6-dev libx11-dev libxft-dev libxinerama-dev libxi-dev
+sudo apt install --no-install-recommends xserver-xorg-core xserver-xorg-video-intel xserver-xorg-input-libinput x11-xserver-utils x11-xkb-utils x11-utils xinit xterm libglx-mesa0 libxfont2 xfonts-base xfonts-scalable xfonts-utils
+sudo apt install --no-install-recommends gcc lm-sensors htop make gnupg libc6-dev libx11-dev libxft-dev libxinerama-dev libxi-dev
 sudo apt install --no-install-recommends surf dmenu rofi
 mkdir Documents
 mkdir Downloads && cd Downloads
@@ -19,15 +19,19 @@ Removing unused locales
 Remove doc folder
 - sudo rm -rf /usr/share/doc/*
 Make debian recognise intel graphics
-- update /etc/default/grub default arg line with : i915.force_probe=4c8a -> sudo update-grub
+- update /etc/default/grub default arg line with : i915.force_probe=4c8a
+- sudo update-grub
 
 Check space
 - du -sch * .[!.]* | sort -h
 
 Sublime Package - manual install ayu
-- Download https://github.com/dempfi/ayu/releases/tag/5.0.3
+- wget https://github.com/dempfi/ayu/archive/refs/tags/5.0.3.tar.gz
 - tar -xf ARCHIVE_LOCATION
 - place folder as is in ~/.config/sublime-text/Packages
 
 Windows bootable from Linux
 https://github.com/ValdikSS/windows2usb
+
+Old GMAIL link
+https://mail.google.com/mail/u/0/h/27pbkbpwk5yx/?f=1
