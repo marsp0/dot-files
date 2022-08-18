@@ -1,10 +1,8 @@
 sudo apt install --no-install-recommends xserver-xorg-core xserver-xorg-video-intel xserver-xorg-input-libinput x11-xserver-utils x11-xkb-utils x11-utils xinit xterm libglx-mesa0 libxfont2 xfonts-base xfonts-scalable xfonts-utils
-sudo apt install --no-install-recommends gcc lm-sensors htop make gnupg libc6-dev libx11-dev libxft-dev libxinerama-dev libxi-dev
+sudo apt install --no-install-recommends gcc lm-sensors make gnupg libc6-dev libx11-dev libxft-dev libxinerama-dev libxi-dev
 sudo apt install --no-install-recommends surf dmenu rofi
-mkdir Documents
-mkdir Downloads && cd Downloads
+// clone dwm
 git clone git://git.suckless.org/dwm
-git clone https://github.com/marsp0/dot-files
 cp ./dot-files/dwm-config.h ./dwm/config.h
 cd dwm
 sudo make clean install
@@ -35,3 +33,4 @@ https://github.com/ValdikSS/windows2usb
 
 Old GMAIL link
 https://mail.google.com/mail/u/0/h/27pbkbpwk5yx/?f=1
+
