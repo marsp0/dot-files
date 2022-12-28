@@ -1,5 +1,5 @@
-sudo apt install --no-install-recommends xserver-xorg-core xserver-xorg-video-intel xserver-xorg-input-libinput x11-xserver-utils x11-xkb-utils x11-utils xinit xterm libglx-mesa0 libxfont2 xfonts-base xfonts-scalable xfonts-utils
-sudo apt install --no-install-recommends gcc lm-sensors make gnupg libc6-dev libx11-dev libxft-dev libxinerama-dev libxi-dev
+sudo apt install --no-install-recommends xserver-xorg-core xserver-xorg-video-intel xserver-xorg-input-libinput x11-xserver-utils x11-xkb-utils x11-utils xinit xterm libglx-mesa0 libxfont2 xfonts-base
+sudo apt install --no-install-recommends gcc gdb lm-sensors make gnupg libc6-dev libx11-dev
 sudo apt install --no-install-recommends surf dmenu rofi
 // clone dwm
 git clone git://git.suckless.org/dwm
