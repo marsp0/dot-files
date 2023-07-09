@@ -4,7 +4,7 @@ echo "------------------------------------------"
 apt install --no-install-recommends xserver-xorg-core \
 									xserver-xorg-video-intel \
 									xserver-xorg-input-libinput \
-									x11-xserver-utils \
+									x11-xserver-utils x11-utils \
 									xinit \
 									xterm \
 									libglx-mesa0 \
@@ -22,12 +22,34 @@ cp /home/martin/Downloads/dot-files/gdb-dashboard/init /home/martin/.gdbinit.d/
 echo "----------------------------------------"
 echo "-------- Installing dwm + surf ---------"
 echo "----------------------------------------"
+sudo apt install --no-install-recommends dmenu \
+                                         libgcr-ui-3-1 \
+                                         libxslt1.1 \
+                                         libopengl0 \
+                                         libharfbuzz-icu0 \
+                                         libopenjp2-7 \
+                                         libwebpdemux2 \
+                                         libsoup-3.0-0 \
+                                         libsecret-1-0 \
+                                         libhyphen0
+mkdir /usr/local/lib
+mkdir /usr/local/libexec
+mkdir /usr/local/libexec/webkit2gtk-4.1
+
 cp /home/martin/Downloads/dot-files/dwm/dwm /usr/bin/
+
 cp /home/martin/Downloads/dot-files/.Xresources /home/martin/.Xresources
 cp /home/martin/Downloads/dot-files/.xinitrc /home/martin/.xinitrc
 cp /home/martin/Downloads/dot-files/sensors.sh /home/martin/Documents
+cp /home/martin/Downloads/dot-files/clear.sh /home/martin/Documents
 cp /home/martin/Downloads/dot-files/surf.desktop /usr/share/applications/
+
 cp /home/martin/Downloads/dot-files/surf/bin/surf /usr/bin
+cp -r /home/martin/Downloads/dot-files/surf/lib/surf /usr/local/lib
+cp -r /home/martin/Downloads/dot-files/surf/lib/webkit2gtk-4.1 /usr/local/lib
+cp /home/martin/Downloads/dot-files/surf/lib/lib* /usr/lib
+cp /home/martin/Downloads/dot-files/surf/build/bin/WebKitNetworkProcess /usr/local/libexec/webkit2gtk-4.1
+cp /home/martin/Downloads/dot-files/surf/build/bin/WebKitWebProcess /usr/local/libexec/webkit2gtk-4.1
 
 echo "----------------------------------------"
 echo "------- Installing Sublime Text --------"
