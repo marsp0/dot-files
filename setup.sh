@@ -1,7 +1,15 @@
 echo "------------------------------------------"
 echo "------- Installing xorg + friends --------"
 echo "------------------------------------------"
-apt install --no-install-recommends xserver-xorg-core xserver-xorg-video-intel xserver-xorg-input-kbd xserver-xorg-input-mouse x11-utils xinit xterm libglx-mesa0 libxfont2 xfonts-base
+apt install --no-install-recommends xserver-xorg-core \
+									xserver-xorg-video-intel \
+									xserver-xorg-input-libinput \
+									x11-xserver-utils \
+									xinit \
+									xterm \
+									libglx-mesa0 \
+									libxfont2 \
+									xfonts-base
 
 echo "----------------------------------------"
 echo "------- Installing gcc + friends -------"
@@ -20,14 +28,6 @@ cp /home/martin/Downloads/dot-files/.xinitrc /home/martin/.xinitrc
 cp /home/martin/Downloads/dot-files/sensors.sh /home/martin/Documents
 cp /home/martin/Downloads/dot-files/surf.desktop /usr/share/applications/
 cp /home/martin/Downloads/dot-files/surf/bin/surf /usr/bin
-cp -r /home/martin/Downloads/dot-files/surf/lib /usr/lib
-
-echo "----------------------------------------"
-echo "------- Removing unused locales --------"
-echo "----------------------------------------"
-cd /usr/share/locale
-ls | grep -v "en" | grep -v "locale.alias" | xargs sudo rm -rf
-cd /home/martin
 
 echo "----------------------------------------"
 echo "------- Installing Sublime Text --------"
