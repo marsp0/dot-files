@@ -48,6 +48,10 @@ cp /home/martin/Downloads/dot-files/surf/bin/surf /usr/bin
 cp -r /home/martin/Downloads/dot-files/surf/lib/surf /usr/local/lib
 cp -r /home/martin/Downloads/dot-files/surf/lib/webkit2gtk-4.1 /usr/local/lib
 cp /home/martin/Downloads/dot-files/surf/lib/lib* /usr/lib
+ln -s /usr/lib/libwebkit2gtk-4.1.so /usr/lib/libwebkit2gtk-4.1.so.0
+ln -s /usr/lib/libwebkit2gtk-4.1.so /usr/lib/libwebkit2gtk-4.1.so.0.2.8
+ln -s /usr/lib/libjavascriptcoregtk-4.1.so /usr/lib/libjavascriptcoregtk-4.1.so.0
+ln -s /usr/lib/libjavascriptcoregtk-4.1.so /usr/lib/libjavascriptcoregtk-4.1.so.0.2.8
 cp /home/martin/Downloads/dot-files/surf/build/bin/WebKitNetworkProcess /usr/local/libexec/webkit2gtk-4.1
 cp /home/martin/Downloads/dot-files/surf/build/bin/WebKitWebProcess /usr/local/libexec/webkit2gtk-4.1
 
