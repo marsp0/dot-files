@@ -1,0 +1,41 @@
+sudo apt install --no-install-recommends xserver-xorg-core xserver-xorg-video-intel xserver-xorg-input-libinput x11-xserver-utils x11-xkb-utils x11-utils xinit xterm libglx-mesa0 libxfont2 xfonts-base
+sudo apt install --no-install-recommends gcc gdb lm-sensors make gnupg libc6-dev libx11-dev
+sudo apt install --no-install-recommends surf dmenu rofi
+// clone dwm
+git clone git://git.suckless.org/dwm
+cp ./dot-files/dwm-config.h ./dwm/config.h
+cd dwm
+sudo make clean install
+cd ../
+cp ./dot-files/.Xresources ~/.Xresources
+cp ./dot-files/.xinitrc ~/.xinitrc
+
+Disable console printing of kernel messages
+- dmesg -n 1
+Removing unused locales
+- ls | grep -v "en" | grep -v "locale.alias" | xargs sudo rm -rf
+Remove doc folder
+- sudo rm -rf /usr/share/doc/*
+Make debian recognise intel graphics
+- update /etc/default/grub default arg line with : i915.force_probe=4c8a
+- sudo update-grub
+
+Check space
+- du -sch * .[!.]* | sort -h
+
+Sublime Package - manual install ayu
+- wget https://github.com/dempfi/ayu/archive/refs/tags/5.0.3.tar.gz
+- tar -xf ARCHIVE_LOCATION
+- place folder as is in ~/.config/sublime-text/Packages
+
+Windows bootable from Linux
+https://github.com/ValdikSS/windows2usb
+
+Old GMAIL link
+https://mail.google.com/mail/u/0/h/27pbkbpwk5yx/?f=1
+
+Set up gdb
+wget -P ~ https://git.io/.gdbinit
+mkdir ~/.gdbinit.d
+cp ~/Downloads/dot-files/gdb-dashboard/init ~/.gdbinit.d/
+

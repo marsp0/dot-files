@@ -15,9 +15,10 @@ echo "----------------------------------------"
 echo "------- Installing gcc + friends -------"
 echo "----------------------------------------"
 apt install --no-install-recommends gcc gdb lm-sensors make gnupg libc6-dev libx11-dev
-wget -P /home/martin https://git.io/.gdbinit
-mkdir /home/martin/.gdbinit.d
-cp /home/martin/Downloads/dot-files/gdb-dashboard/init /home/martin/.gdbinit.d/
+cp /home/martin/Downloads/dot-files/ddd/ddd /usr/bin
+#wget -P /home/martin https://git.io/.gdbinit
+#mkdir /home/martin/.gdbinit.d
+#cp /home/martin/Downloads/dot-files/gdb-dashboard/init /home/martin/.gdbinit.d/
 
 echo "----------------------------------------"
 echo "-------- Installing dwm + surf ---------"
@@ -42,7 +43,9 @@ cp /home/martin/Downloads/dot-files/.Xresources /home/martin/.Xresources
 cp /home/martin/Downloads/dot-files/.xinitrc /home/martin/.xinitrc
 cp /home/martin/Downloads/dot-files/sensors.sh /home/martin/Documents
 cp /home/martin/Downloads/dot-files/clear.sh /home/martin/Documents
-cp /home/martin/Downloads/dot-files/surf.desktop /usr/share/applications/
+cp /home/martin/Downloads/dot-files/surf/surf.desktop /usr/share/applications/
+cp /home/martin/Downloads/dot-files/surf/home.sh /usr/bin/
+cp /home/martin/Downloads/dot-files/surf/duck.sh /usr/bin/
 
 cp /home/martin/Downloads/dot-files/surf/bin/surf /usr/bin
 cp -r /home/martin/Downloads/dot-files/surf/lib/surf /usr/local/lib
