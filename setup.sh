@@ -15,10 +15,10 @@ echo "----------------------------------------"
 echo "------- Installing gcc + friends -------"
 echo "----------------------------------------"
 apt install --no-install-recommends gcc gdb lm-sensors make gnupg libc6-dev libx11-dev
-cp /home/martin/Downloads/dot-files/ddd/ddd /usr/bin
-#wget -P /home/martin https://git.io/.gdbinit
-#mkdir /home/martin/.gdbinit.d
-#cp /home/martin/Downloads/dot-files/gdb-dashboard/init /home/martin/.gdbinit.d/
+#cp /home/martin/Downloads/dot-files/ddd/ddd /usr/bin
+wget -P /home/martin https://git.io/.gdbinit
+mkdir /home/martin/.gdbinit.d
+cp /home/martin/Downloads/dot-files/gdb-dashboard/init /home/martin/.gdbinit.d/
 
 echo "----------------------------------------"
 echo "-------- Installing dwm + surf ---------"
